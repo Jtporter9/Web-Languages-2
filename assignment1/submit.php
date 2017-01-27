@@ -65,9 +65,6 @@ else {
 
     <?php
         echo '
-        <h2> 
-        ' . $sent . '
-        </h2>
         <div class="thank-you">
             <h3>Thanks for signing up to be a member! The following details were submitted . . .</h3>
             <p>Email: ' . $email . '</p>
@@ -77,6 +74,8 @@ else {
             <p>About you: ' . $about_you . '</p>
         </div>
 
+        <h3>' . $sent . '</h3>
+        
         <div>
         <p>The Email should be as follows: <p/>
         ' . $message . '
