@@ -40,7 +40,7 @@ $headers = 'From: jtporter9@gmail.com' . "\r\n" .
     .$gender."\nAbout you: "
     .$about_you."\n";
 // SEND THE EMAIL 
-    mail($to, $subject, $message, $headers);   
+    $foo = mail($to, $subject, $message, $headers);   
 
     ?>
  
@@ -70,6 +70,7 @@ $headers = 'From: jtporter9@gmail.com' . "\r\n" .
         <div>
         <p>The Email should be as follows: <p/>
         ' . $message . '
+        ' . $foo . '
         </div>
       
     ';?>
