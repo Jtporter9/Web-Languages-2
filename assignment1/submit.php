@@ -20,17 +20,21 @@
 
 //BUILD THE EMAIL
 
+$headers = 'From: jtporter9@gmail.com' . "\r\n" .
+    'Reply-To: jtporter9@gmail.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
     $to = "jtporter9@gmail.com";
     $subject = "Web Languages to Assignment 1 Email Form";
 
-    $email_message = "Thank you for signing up! The following info was submitted\n\n Email: "
+    $message = "Thank you for signing up! The following info was submitted\n\n Email: "
     .$email."\nPassword: "
     .$password."\nSubscribed: "
     .$subscribed."\nGender: "   
     .$gender."\nAbout you: "
     .$about_you."\n";
 // SEND THE EMAIL 
-    mail($to, $subject, $email_message, 'FROM'.$email);   
+    mail($to, $subject, $message, $headers);   
 
     ?>
  
