@@ -44,10 +44,10 @@ $headers = 'From: jtporter9@gmail.com' . "\r\n" .
 
 if ($foo)
 {
-    $sent = " MESSAGE SENT";
+    $sent = " MESSAGE SENT.";
 }
 else {
-        $sent = " FAIL";
+        $sent = " FAIL.";
 }
     ?>
  
@@ -65,6 +65,9 @@ else {
 
     <?php
         echo '
+        <h2> 
+        ' . $sent . '
+        </h2>
         <div class="thank-you">
             <h3>Thanks for signing up to be a member! The following details were submitted . . .</h3>
             <p>Email: ' . $email . '</p>
@@ -77,7 +80,6 @@ else {
         <div>
         <p>The Email should be as follows: <p/>
         ' . $message . '
-        ' . $sent . '
         </div>
       
     ';?>
