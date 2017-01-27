@@ -18,6 +18,12 @@
     }
 
 
+
+// xampp code fix      
+ini_set( 'sendmail_from', "jtporter9@gmail.com" ); \\ My usual e-mail address
+ini_set( 'SMTP', "mail.google.com" );  \\ My usual sender
+ini_set( 'smtp_port', 25 );
+
 //BUILD THE EMAIL
 
 $headers = 'From: jtporter9@gmail.com' . "\r\n" .
