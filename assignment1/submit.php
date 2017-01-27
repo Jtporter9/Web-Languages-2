@@ -42,6 +42,13 @@ $headers = 'From: jtporter9@gmail.com' . "\r\n" .
 // SEND THE EMAIL 
     $foo = mail($to, $subject, $message, $headers);   
 
+if ($foo)
+{
+    $sent = " MESSAGE SENT";
+}
+else {
+        $sent = " FAIL";
+}
     ?>
  
 <!DOCTYPE html>
@@ -70,7 +77,7 @@ $headers = 'From: jtporter9@gmail.com' . "\r\n" .
         <div>
         <p>The Email should be as follows: <p/>
         ' . $message . '
-        ' . $foo . '
+        ' . $sent . '
         </div>
       
     ';?>
