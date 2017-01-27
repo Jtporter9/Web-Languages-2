@@ -63,7 +63,7 @@ $headers = 'From: jtporter9@gmail.com' . "\r\n" .
 
         <div>
         <p>The Email should be as follows: <p/>
-        ' . $email_message . '
+        ' . $message . '
         </div>
       
     ';?>
