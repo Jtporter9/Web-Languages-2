@@ -20,7 +20,7 @@
 
 
 // xampp code fix      
-// ini_set( 'sendmail_from', "jtporter9@gmail.com" );
+ini_set( 'sendmail_from', "jtporter9@gmail.com" );
 // ini_set( 'SMTP', "	smtp-relay.gmail.com" );
 // ini_set( 'smtp_port', 25 );
 
