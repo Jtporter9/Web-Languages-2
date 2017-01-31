@@ -40,14 +40,14 @@ $headers = 'From: jtporter9@gmail.com' . "\r\n" .
     .$gender."\nAbout you: "
     .$about_you."\n";
 // SEND THE EMAIL 
-    $foo = @mail($to, $subject, $message);   
+    $foo = mail($to, $subject, $message);   
 
 if ($foo)
 {
-    $sent = " MESSAGE SENT.";
+    $sent = " MESSAGE SENT";
 }
 else {
-        $sent = " FAIL.";
+        $sent = " FAILED TO SEND";
 }
     ?>
  
@@ -74,7 +74,7 @@ else {
             <p>About you: ' . $about_you . '</p>
         </div>
 
-        <h3>' . $sent . '</h3>
+        <h3>' . $sent . ' to ' . $to . '</h3>
         
         <div>
         <p>The Email should be as follows: <p/>
