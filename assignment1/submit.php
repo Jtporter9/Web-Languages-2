@@ -20,15 +20,17 @@
 
 
 // xampp code fix      
-ini_set( 'sendmail_from', "jtporter9@gmail.com" );
-ini_set( 'SMTP', "	smtp-relay.gmail.com" );
-    ini_set( 'smtp_port', 25 );
+// ini_set( 'sendmail_from', "jtporter9@gmail.com" );
+// ini_set( 'SMTP', "	smtp-relay.gmail.com" );
+//     ini_set( 'smtp_port', 25 );
 
 //BUILD THE EMAIL
 
-$headers = 'From: jtporter9@gmail.com' . "\r\n" .
-    'Reply-To: jtporter9@gmail.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+$headers = 'From: jtporter9@gmail.com';
+
+//  . "\r\n" .
+//     'Reply-To: jtporter9@gmail.com' . "\r\n" .
+//     'X-Mailer: PHP/' . phpversion();
 
     $to = "jtporter9@gmail.com";
     $subject = "Web Languages to Assignment 1 Email Form";
