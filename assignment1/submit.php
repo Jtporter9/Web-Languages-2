@@ -40,7 +40,7 @@ $headers = 'From: jtporter9@gmail.com' . "\r\n" .
     .$gender."\nAbout you: "
     .$about_you."\n";
 // SEND THE EMAIL 
-    $foo = @mail($to, $subject, $message, $headers);   
+    $foo = @mail($to, $subject, $message);   
 
 if ($foo)
 {
